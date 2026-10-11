@@ -1,0 +1,958 @@
+{
+  "framework_base_commit": "3cfe26cdf284b4e117ee0479dc974235aec49b5a",
+  "snapshot": "completed SGD-feedback main-method source; local paths omitted",
+  "files": [
+    {
+      "path": "training/kdflow/__init__.py",
+      "original_sha256": "9ba93268da7005c3f55d872aade957da84b73c9b8e9c494e7117416bda446fc7"
+    },
+    {
+      "path": "training/kdflow/algorithms/__init__.py",
+      "original_sha256": "f4fa745b9cdce3935be091491522e74654a5b1be4870577545de3f27555ad18c"
+    },
+    {
+      "path": "training/kdflow/algorithms/dskd.py",
+      "original_sha256": "0bd7e2f0a487f7028815a4071865de4faf4b6b1d9f0fcdfdc5bb9790f71f52de"
+    },
+    {
+      "path": "training/kdflow/algorithms/iw_opd_full_kl_bridge.py",
+      "original_sha256": "c6f5bf80341870cdf3088343337ff38ed7fac05970ee313fae47cb68e4d2a09a"
+    },
+    {
+      "path": "training/kdflow/algorithms/prr_core.py",
+      "original_sha256": "afd5644d7ce738e4589c62440d916c399c0649e1ef94f80f2186954ac8403c25"
+    },
+    {
+      "path": "training/kdflow/algorithms/prr_v1.py",
+      "original_sha256": "608cf6c53b77a3343c2be804dbd0ce273e2de1ab508873f7fee24567ceaf7338"
+    },
+    {
+      "path": "training/kdflow/algorithms/sft.py",
+      "original_sha256": "2508443417522af92c340048fdfa17893743daf18aa6afb09da335be7ed11764"
+    },
+    {
+      "path": "training/kdflow/algorithms/simple_ctkd.py",
+      "original_sha256": "060fc6e9f0e60bf845d6a0f5ead4ddef175e6970cd085c95cc349e5498091adf"
+    },
+    {
+      "path": "training/kdflow/algorithms/vanilla_kd.py",
+      "original_sha256": "a991b839ca11efbad046af4fd4730f0f483aa9f3a017cdc5e22092e14f1b13a0"
+    },
+    {
+      "path": "training/kdflow/arguments/__init__.py",
+      "original_sha256": "3e6866da38b09bde76f9bdd8a582b150d2774ba2c207e3eb5c24ad83af566746"
+    },
+    {
+      "path": "training/kdflow/arguments/ckpt_args.py",
+      "original_sha256": "0b515a1f657173ff2aa29964f9f2238b0477b9b70d1425a381fe1e83c32afe48"
+    },
+    {
+      "path": "training/kdflow/arguments/data_args.py",
+      "original_sha256": "c1557c2be7b454f404523f5a97cf1d394b1253dd89ca20b59cb5573245838e6d"
+    },
+    {
+      "path": "training/kdflow/arguments/distillation_args.py",
+      "original_sha256": "b16382225fa3d5292946cfe226dd0494c6f0cf586a579d642a303889ed9d8292"
+    },
+    {
+      "path": "training/kdflow/arguments/fsdp_args.py",
+      "original_sha256": "10918e4e3242a526ab0926af4a2608a3a77dea058fd084ecee9022852aecac47"
+    },
+    {
+      "path": "training/kdflow/arguments/logging_args.py",
+      "original_sha256": "04962dc07b647b6986f8879d3d1c45f7dbfacfeb35dac851a3fbdc9eb9108dfd"
+    },
+    {
+      "path": "training/kdflow/arguments/model_args.py",
+      "original_sha256": "b6da8907b70189acaa7c1b51544135e441182e28194ee3bbe4f23ec1fa23cb83"
+    },
+    {
+      "path": "training/kdflow/arguments/rollout_args.py",
+      "original_sha256": "5501d77a537af5dd23467112c12ddb4cfcd97f4a6e5fc6a0d1d600d6a405a901"
+    },
+    {
+      "path": "training/kdflow/arguments/training_args.py",
+      "original_sha256": "eb89a065c6ad0d2e8ffdfaad7b5c512bd802e53179381c975ae89732f7d7bc10"
+    },
+    {
+      "path": "training/kdflow/backend/__init__.py",
+      "original_sha256": "b36cc114c0ffd20559a6e87808b158d7244566645933639023cf00019e03e137"
+    },
+    {
+      "path": "training/kdflow/backend/fsdp/__init__.py",
+      "original_sha256": "9b1dffb545428c2862d6cc588507709797ba05f24d4017e9a450a7afa09701d9"
+    },
+    {
+      "path": "training/kdflow/backend/fsdp/checkpoint.py",
+      "original_sha256": "6c2cd2b541555714ff7baaec24c82a41c2ab2b822d4582860ac9eaf21d6a86ee"
+    },
+    {
+      "path": "training/kdflow/backend/fsdp/fsdp_strategy.py",
+      "original_sha256": "f6ab732f4ea449521d9a543508266b70bcbaf466c7123b260698afe021a56f5d"
+    },
+    {
+      "path": "training/kdflow/backend/sglang/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "training/kdflow/backend/sglang/monkey_patch.py",
+      "original_sha256": "0c01d71e4bcc27c892c276084cd2482a5d710401164b90d9961d7644bb129bb1"
+    },
+    {
+      "path": "training/kdflow/backend/sglang/sglang_engine.py",
+      "original_sha256": "09b31370b4456815de9c5b06a69cc120a471dfb4dcf6d9201e9744ad3f9486a5"
+    },
+    {
+      "path": "training/kdflow/cli/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "training/kdflow/cli/train_kd_off_policy.py",
+      "original_sha256": "a13ede0f2c356a6c4c2fe57b5536c26d0d6d41e8b4e325812b5728408c4c51ba"
+    },
+    {
+      "path": "training/kdflow/cli/train_kd_on_policy.py",
+      "original_sha256": "07af6069ef83f0b01d7d60d8813ac9870ae4d545f64c5b00a9533530de4008d5"
+    },
+    {
+      "path": "training/kdflow/cli/train_sft.py",
+      "original_sha256": "270ef5ba500c2c1ff80b58aa4b0e73a2d380adff17ac76dc530c197ccebd1b25"
+    },
+    {
+      "path": "training/kdflow/datasets/__init__.py",
+      "original_sha256": "e3bbf50a5dc0d5c104e18d2712f9f05d584711908579a3404d807c4f515a25d7"
+    },
+    {
+      "path": "training/kdflow/datasets/prompts_dataset.py",
+      "original_sha256": "b46326d15bbfcd6b1f04df514a5807780e4a8c0e2f3b98a7574377cefadd653b"
+    },
+    {
+      "path": "training/kdflow/datasets/sft_dataset.py",
+      "original_sha256": "614cc59db05d850a1c3a2b27c641ef7474cadbd177b62ae81bc87dd41f3677af"
+    },
+    {
+      "path": "training/kdflow/datasets/utils.py",
+      "original_sha256": "cc90bc0e5f3dacd473018e5a36c8a6e7d44f832cc91f82b2dbcaa26ea066f36d"
+    },
+    {
+      "path": "training/kdflow/loss/__init__.py",
+      "original_sha256": "3bc98a351ad62faa346607502dcd56e864536b81877ca0221fd2b2ca9045f630"
+    },
+    {
+      "path": "training/kdflow/loss/adaptive_kl_div.py",
+      "original_sha256": "f8a44824867ae3fa7e732f7ae5554d6b13231ff9545e1fd61793a8f546d7d39c"
+    },
+    {
+      "path": "training/kdflow/loss/chunked_loss.py",
+      "original_sha256": "44ebc66f7a9f51f0a1b3b2ae2b61cc505d6daf3d8d52e0be6f3c63644a26d15b"
+    },
+    {
+      "path": "training/kdflow/loss/cross_entropy.py",
+      "original_sha256": "e3629bef7c50c737f384870876321c953ceb09b67c275242cdbfcfbcbca68377"
+    },
+    {
+      "path": "training/kdflow/loss/hierarchical_ranking_loss.py",
+      "original_sha256": "2cced8cccf77872ab817164a931c97c43c7411b8d59cc48d842111e40f021ac3"
+    },
+    {
+      "path": "training/kdflow/loss/js_div.py",
+      "original_sha256": "be71370e1e1a2c109c2a00a4e6daaece8ab17f182f1a3f03c60a385b98fb3078"
+    },
+    {
+      "path": "training/kdflow/loss/kl_div.py",
+      "original_sha256": "b361ddca392ee4b2e83e44b6891f4402f86127db38b6e254d492d29c48950a7c"
+    },
+    {
+      "path": "training/kdflow/loss/reverse_kl_div.py",
+      "original_sha256": "abca69fdbe4f7d90a7ca990300189147230cce8f20d589c934d88f0b63c4edf6"
+    },
+    {
+      "path": "training/kdflow/loss/skewed_kl_div.py",
+      "original_sha256": "98189a13bf644d3c46d53aa228a264b9ed666b9d28586a343f0c2bdbd6fed091"
+    },
+    {
+      "path": "training/kdflow/loss/skewed_rkl_div.py",
+      "original_sha256": "3c78a1b04270f7d8ed40449f28f5ed936af71c0bc7d5a0badf0864454ddf66f0"
+    },
+    {
+      "path": "training/kdflow/loss/top1_ce.py",
+      "original_sha256": "97e004fb61e9eca9f854236857c1115840fe66bb28fca1575e7df7265e57ada5"
+    },
+    {
+      "path": "training/kdflow/loss/tvd.py",
+      "original_sha256": "964d872f122ec4618cfee1fd2adf8ecc0fc82a8279cce83cab8b277335f8aa2c"
+    },
+    {
+      "path": "training/kdflow/metrics/__init__.py",
+      "original_sha256": "b6519a7649b142a7dfa55c8909216ae435ecbae4ea8f76d10a508db2199b773d"
+    },
+    {
+      "path": "training/kdflow/metrics/entropy.py",
+      "original_sha256": "7d4d5e4ab7a7f42c96c517846b9019d8af12d985ee5093e7bd88bccb6e5d4950"
+    },
+    {
+      "path": "training/kdflow/metrics/rollout_consistency.py",
+      "original_sha256": "a0b83fe5cff3f59e594990f3ff4c9eaa042f628fd87bee53b8ef1567a7397de6"
+    },
+    {
+      "path": "training/kdflow/metrics/topk_token_overlap.py",
+      "original_sha256": "989cfbd296842373094ac98e4814ded5c5f076dd443f041f26e9c55c31291a64"
+    },
+    {
+      "path": "training/kdflow/models/__init__.py",
+      "original_sha256": "93370fd72c3d337adcb1bb7cbae6ba2cf9eab2ef49b5b466ada816f7b6bbd148"
+    },
+    {
+      "path": "training/kdflow/models/model.py",
+      "original_sha256": "a543c2b33755a580cbf6c71cc552b02946ba85a4790e29d62da26015ae1b48bc"
+    },
+    {
+      "path": "training/kdflow/models/packing_utils.py",
+      "original_sha256": "2e46bdbfef32996de03edc4c4f0140a291197e36b178c67b91fc0a67d9ecd845"
+    },
+    {
+      "path": "training/kdflow/models/ring_attn_utils.py",
+      "original_sha256": "3121b31333a9346e6eacc50b9e8796e59561ac0dfb43187c34fbaf22d4a0021d"
+    },
+    {
+      "path": "training/kdflow/models/utils.py",
+      "original_sha256": "cfef9ca657b32c8ee5688f01f0f1e939ec3fc61fbd8792085d63af66f74e85d5"
+    },
+    {
+      "path": "training/kdflow/ray/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "training/kdflow/ray/placement_group.py",
+      "original_sha256": "08b0a5d82cacea096b1591e3d12d25f30f285145cade451578763f3b16144a27"
+    },
+    {
+      "path": "training/kdflow/ray/rollout/__init__.py",
+      "original_sha256": "13401bf88cab65c4e388736c19f4ff2df16fc2a8ff9cbc07a1b48c76876092de"
+    },
+    {
+      "path": "training/kdflow/ray/rollout/rollout_actor.py",
+      "original_sha256": "8fd7b3f4106e31350e103b8fa724dfc529386bb4a589c9940df1bfafc6c1a602"
+    },
+    {
+      "path": "training/kdflow/ray/rollout/rollout_group.py",
+      "original_sha256": "f110d508a74e026139b30b711dc4f2056c5758ce2c9a0b0493ee1fb8ca0bd8d3"
+    },
+    {
+      "path": "training/kdflow/ray/train/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "training/kdflow/ray/train/multi_teacher_group.py",
+      "original_sha256": "0c41723a49de85138216552c7ab8c896889eea0a8392b2ae991c0f47fdd54377"
+    },
+    {
+      "path": "training/kdflow/ray/train/student_actor.py",
+      "original_sha256": "1561303c74a9d7beb2383f14d1d41c868b3cc2124515d170982e33026b7a1fab"
+    },
+    {
+      "path": "training/kdflow/ray/train/student_group.py",
+      "original_sha256": "4371706539a1ebdb252b42236650520b7d93655dfeabceb2367a40464edeb11a"
+    },
+    {
+      "path": "training/kdflow/ray/train/teacher_actor.py",
+      "original_sha256": "3b4aeca8c921a953738246971cc4f99c3de149bcefdb1fc7938e6c6521222138"
+    },
+    {
+      "path": "training/kdflow/ray/train/teacher_group.py",
+      "original_sha256": "6ddb2e9795e0eb197e55ea8671aec575e3c6b29688234b7a13f5d4db542e5144"
+    },
+    {
+      "path": "training/kdflow/ray/utils.py",
+      "original_sha256": "7864a5af487d2ffd5f3811c90751e63f7fc743f74b9becdfe48b94ce1e80686a"
+    },
+    {
+      "path": "training/kdflow/trainer/__init__.py",
+      "original_sha256": "9e0e576dfc5b03153b1f8c23760de7eb88e63b5709ba030b7719440804dcecdf"
+    },
+    {
+      "path": "training/kdflow/trainer/data_processor/__init__.py",
+      "original_sha256": "66a34ffc421ade775f246c8198bfdc9633e83c97b355084fa457e6e15695b775"
+    },
+    {
+      "path": "training/kdflow/trainer/data_processor/rollout_data_processor.py",
+      "original_sha256": "982b9e872ab4e04488b78e143d83dde04dc2b833fc09323bad214087d61644eb"
+    },
+    {
+      "path": "training/kdflow/trainer/off_policy_kd_trainer.py",
+      "original_sha256": "7a09bf45f9d6ca7c52a8896b532583ee1fec78d42f8408ca86a9c995941f2a80"
+    },
+    {
+      "path": "training/kdflow/trainer/on_policy_kd_trainer.py",
+      "original_sha256": "99d0da0edffeab8d0e16d0dbd4628fdfb74821e0816d2aeb6d2528553ad5f379"
+    },
+    {
+      "path": "training/kdflow/trainer/rollout_manager.py",
+      "original_sha256": "1a265a7454bdd6cdef83178e7adf36a2b7652bd5d3e0ba12426817b1f3db1cd1"
+    },
+    {
+      "path": "training/kdflow/trainer/sft_trainer.py",
+      "original_sha256": "d02f494a9d0a4db180ab9cb3c02252f76c95abac2797301985673f2a81c421a9"
+    },
+    {
+      "path": "training/kdflow/utils/__init__.py",
+      "original_sha256": "9ed449850c624d587592f92760c79c55324063a7cc16fbfa5aab42585165afb1"
+    },
+    {
+      "path": "training/kdflow/utils/distributed_sampler.py",
+      "original_sha256": "5a099195c63e475f42fd17e43b4c40ed1133ac3237f623410befffcc9005cda7"
+    },
+    {
+      "path": "training/kdflow/utils/distributed_util.py",
+      "original_sha256": "6a7850b1490c9122f08384eab1343c908cf526af1fcb997b8898d92325edaf98"
+    },
+    {
+      "path": "training/kdflow/utils/dynamic_bsz.py",
+      "original_sha256": "731daf0e81b95318b214f01c389526d7a3385daf1993724ef524fcf5a7b448d2"
+    },
+    {
+      "path": "training/kdflow/utils/logging_utils.py",
+      "original_sha256": "98f7aadc13d5c204f02387cad29a4c5f7533f939dc72bd3d3e7a0e76b3b7cf6f"
+    },
+    {
+      "path": "training/kdflow/utils/multimodal_utils.py",
+      "original_sha256": "8b16f06ea69d3c4b2cfb17bb8cb215652350e0aa0548e9f06d07950c07aa34bf"
+    },
+    {
+      "path": "training/kdflow/utils/utils.py",
+      "original_sha256": "8e503d7c62f1c6c7e43e1bc031c1569e0a2f8e814575582707136f5973138721"
+    },
+    {
+      "path": "LICENSE",
+      "original_sha256": "c9f18bd09f6b760b2ceb9826447d56fd72b272ee318fb2eb48be20a68210b3be"
+    },
+    {
+      "path": "training/LICENSE",
+      "original_sha256": "c9f18bd09f6b760b2ceb9826447d56fd72b272ee318fb2eb48be20a68210b3be"
+    },
+    {
+      "path": "training/requirements.txt",
+      "original_sha256": "9054ed31b49f4045f9cbeb5700baaa7fd7a7cda38e460e4bb457b6f568703828"
+    },
+    {
+      "path": "training/pyproject.toml",
+      "original_sha256": "586b1fe888c7d796f347bdd0cdf8988742d63b30ed7723a5892504baaff0c3fd"
+    },
+    {
+      "path": "baselines/iw_opd_full_kl.py",
+      "original_sha256": "fb9ee66fc6ed967fb631c00232eeda36de2c8c203ec31417cd7b7d7c296a5e5c"
+    },
+    {
+      "path": "baselines/generate_teacher_responses.py",
+      "original_sha256": "1f7ec85e1bcdd0e46261c78526ea2f231820db5f83afc082b1f3a35f63de1eb7"
+    },
+    {
+      "path": "scripts/clean_training_data.py",
+      "original_sha256": "34fc357f769aced8ef61b48751fa526ad4763455c8504f592a4cc90ebb04f6ee"
+    },
+    {
+      "path": "scripts/prepare_code_data.py",
+      "original_sha256": "7ad7bee76fbbb042996ce06720d145d626b7cdd3bc5f0f45bd9276d3059357c3"
+    },
+    {
+      "path": "scripts/prepare_math_data.py",
+      "original_sha256": "95cae871af98fc9cab3fd8ae5c9b6d12888fa66fb7d2ebe8aa85df0b9861085c"
+    },
+    {
+      "path": "evaluation/run.py",
+      "original_sha256": "ab6ff8cb278f6703bdd31c9f67e4616382752a58af8ce64551ab36fb9b142ab5"
+    },
+    {
+      "path": "evaluation/eval_common.py",
+      "original_sha256": "ce37fef9d82f28b0430ecc68fa5e09ba7175d095e9290ed1baf6fa03fb984903"
+    },
+    {
+      "path": "evaluation/eval_scoring.py",
+      "original_sha256": "e28714488f9d09de2e121d0bff2edbbf946e514700ad172ca58750a8d8e19156"
+    },
+    {
+      "path": "evaluation/generate.py",
+      "original_sha256": "d571c2b410c5120569666b203b8285f2059443626fb0b9b817a0c7f81a0eda30"
+    },
+    {
+      "path": "evaluation/score_dataset.py",
+      "original_sha256": "219793855fb8b44dd091c9b0defba17442ac896793f2e2f90663ed05cf05cd0d"
+    },
+    {
+      "path": "evaluation/memory_guard.py",
+      "original_sha256": "97a054154606827cef10b6cd09810d9c019b19b0882c9a6233c4df627e4dc353"
+    },
+    {
+      "path": "evaluation/test_pipeline.py",
+      "original_sha256": "33857f5f739fdaa0f1cf156e216765bff1805646610de5512478a68007e82240"
+    },
+    {
+      "path": "evaluation/test_scorers.py",
+      "original_sha256": "b53d6041a9f19d44ebc2aa2ace2370c05ab16f794ccab58340659b4865b1eda2"
+    },
+    {
+      "path": "evaluation/setup_bigcode_resources.py",
+      "original_sha256": "a7c0fc08695c9dfb20802fb7047e10721d487565772941b45190d4a4cccc5495"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/eval_14_pass1.py",
+      "original_sha256": "24c2c2ce9c4faa47872bad2e95e3f523cd9f11df3c423d5b7de530aa3de5549e"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/model_compat.py",
+      "original_sha256": "7fad2d3e8e9566fdb5ac338e07dfc10f4c4245595d2927075400b0b9d49a1022"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/score_14_pass1.py",
+      "original_sha256": "24521a99ef7ed4abab3a9ae3054d8fc8ed0162fa18bda59df6b79350c09ff914"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/score_dataset_pass1.py",
+      "original_sha256": "463dca1042b077230425c7c484c3dd2a355ecbd53ebae096fb38aabee979c43f"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/common.py",
+      "original_sha256": "da13b03c6e781666889fb4a901b69e8cbc6acec5de124acf334a4fce5e84c18e"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/score.py",
+      "original_sha256": "d7d3aee3ff792bf19dabda8846161203441a689bce86b47372ac929a46bd4fd9"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/score_one.py",
+      "original_sha256": "47ff426a7f383c0ba685de773f1ba9860cea4956c429a224ec5ef00c00f667bd"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/sandbox_score.sh",
+      "original_sha256": "038f236a3f1a46f4fca7c5d179ae0b732b84e5801d90ad0c2e0a60ee0c4b436c"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/sandbox_score_one.sh",
+      "original_sha256": "3f15cf1d0c9c60dba5876044b027104a93ccf24e9301e02fae601ab81cca587b"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/official_validation/official_utils.py",
+      "original_sha256": "195a4cc5c6745fd6be4c5f9e938da042e28ca989352c72fb078ce2255a1f03ce"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/other-test/evaluate.py",
+      "original_sha256": "d4e34a6e4751d7c37a810fa296aaf5c4e5c603bd964fab31a019536e7d23aef2"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/math_scoring/__init__.py",
+      "original_sha256": "51e4ef28dc1ddb79c5130e5167c7f0817ad441061652057f14f25362edb113d0"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/math_scoring/legacy_scoring.py",
+      "original_sha256": "8da9fbc5b1549a39fa08ea3136d3abb0129b262ef58169233b3f1f2450549a4c"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/math_scoring/scoring.py",
+      "original_sha256": "f8e79f2a3291e81ebf3428468a4fad723d6f506e6741d4dd4c035550fc34e327"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/__init__.py",
+      "original_sha256": "fd8bd103579e95d9a9114272caf122360d6957c5ee4d67dc047884fefe0c48c2"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/codegen.py",
+      "original_sha256": "d5d0383ec4146d641f282104bcccf3641dc81f6efeaf2979ca4b0978e5125625"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/config.py",
+      "original_sha256": "d27099cc275ae6e64fb2c440643fc3b5d0952d1633db646e206b538517ffe6f2"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/data/__init__.py",
+      "original_sha256": "c3588d9eb01c8d8ba4be882d620c721db518f648c92f3b10171d716aaf62f728"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/data/humaneval.py",
+      "original_sha256": "105969e0c700fa77f18b1ae7dd06230e22f81540cf030ddca2cbfeb2630055b4"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/data/mbpp.py",
+      "original_sha256": "186e09b7b14dcf12ed259dfca1d6644a1c266c1bbac41c917fd3c0449a734b24"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/data/utils.py",
+      "original_sha256": "15dc36203f078cdf6c213b5ff55469e23e166e4fe898d46e7287fa4a0e100fbc"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/eval/__init__.py",
+      "original_sha256": "3c833c39b842e33f251c83db4347e0a95191909f23b390c12d73ab29a28a4daf"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/eval/_special_oracle.py",
+      "original_sha256": "92b126b907ee493121b55de06f6a34058b6e18adc8cf1c48737eedcd83f24cdd"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/eval/utils.py",
+      "original_sha256": "5bf8925c8dd7c8f06b05c0ff4f28672e8e3b61d1b567b6a86b90e80bd8b780a4"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/evalperf.py",
+      "original_sha256": "98770da43e1f2b9fa1b34b49c12203cc37765d9f12f088eed343aced54ff6a1f"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/evaluate.py",
+      "original_sha256": "47f766df2dbb2280f7dd2c1040bfff0396c2b414a8d44b639424aa941bee7eab"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/gen/__init__.py",
+      "original_sha256": "7952440f3bd47b4f97f628b3d529dab58e57c42766f9e0594b4d4ccf55882dbb"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/gen/chatgpt_gen.py",
+      "original_sha256": "6327209793ec8802291d5c2d2653c8f52e10340e09d5c2440c94fcfb5222b73f"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/gen/mut_gen.py",
+      "original_sha256": "04e1301f25c3404ddcaca2d749fdd97afc3209e8666014ac773f34407abf518a"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/gen/type_mut.py",
+      "original_sha256": "c64277f00930c122d1adf86c39a735286aa2581952a454c27c424afe7d0eeddb"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/gen/util/__init__.py",
+      "original_sha256": "81a7f0ee32dda4b5794f9645cc1199dc4b5ad8f187c6bd36fca32892ac2b8eef"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/gen/util/anthropic_request.py",
+      "original_sha256": "b4bba3c6a0352c1d0c1f0ba7322f02b117d7764da60823d906406047fafa736c"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/gen/util/ollama_request.py",
+      "original_sha256": "765caa864f0b298ec0efa6b8d060fbb518b5b733be7049c974e0fc493327744d"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/gen/util/openai_request.py",
+      "original_sha256": "eaea0be98f1c9b942b843c7116731b820285a29fceb6f93fc4fd964dc78e0cab"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/inputgen.py",
+      "original_sha256": "3f28bb97c43feec4d61d091d23a8d5184d52da88f506ec0758a8c14d5814566b"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/lecacy_sanitize.py",
+      "original_sha256": "1057b91df273e115e04ba8db3464ae9cb745b9f408d9617ba92991904bef849d"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/perf/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/perf/profile.py",
+      "original_sha256": "641776f898fbe8b2e4a78f29d1f2675e99c956908f7756278efe1e9c15064abe"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/perf/sampling.py",
+      "original_sha256": "44713684b5855a506c8d8c7290dc05443e4b6b40cf7833633ba2a29f8821d9d4"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/perf/sas.py",
+      "original_sha256": "80c538c46fb6fd7a18928716db718eeb3b8e5625af8902b5e5ba07ef7611c564"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/perf/select_pe_inputs.py",
+      "original_sha256": "f1e8c7737bbb0074d8a63fe17de63607865eaf8aaa6b4e329fdeb4be61139935"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/perf/select_pe_tasks.py",
+      "original_sha256": "20de1ec787de8fdcf7e69e7e39dfe757f6687e133f07ba953e4cdf1f63f83752"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/provider/__init__.py",
+      "original_sha256": "4d29e2ddab92a8399f776a5dfbf5738d714fc21c12dd151d6490f51b1e27914b"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/provider/anthropic.py",
+      "original_sha256": "73368886a94cff2801b0b1068b892fdd0c5c9d402ae7d0c92178fe1f7ce66afc"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/provider/base.py",
+      "original_sha256": "820c6bf938d72cca09a3e867a9deecce42dcee35d948b0e58c31ac55060fccdc"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/provider/bedrock.py",
+      "original_sha256": "fb4c708cd826fd67a66d8ce7a0b4ae86b5ad722c189f1649173eb59a593ff708"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/provider/google.py",
+      "original_sha256": "7dacf778aa8b616268982e69cc8f8621a9bbd4b8da4808d498e8c59276979f8e"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/provider/gptqmodel.py",
+      "original_sha256": "23e1deff50ed1aa3ea8888c485eee37965b18c04819bcab958dbec921d15b261"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/provider/hf.py",
+      "original_sha256": "4ea3b2d9870d291c3c47dc857d238f3e444f055186e0361a9c690040cdee9dca"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/provider/hf_gaudi.py",
+      "original_sha256": "dac0529874312dd552ded3810de0c1cf6b3098c2df5ef0be1daa125b1f0af5c2"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/provider/ollama.py",
+      "original_sha256": "2aad445875ccb2df26c43481ffa469a295c860baa78977b051853e0fd8e461e2"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/provider/openai.py",
+      "original_sha256": "6d7d9add7291695e920568bf648e7ebeee41be904a3d386a6d0a9f8cc4b1a62d"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/provider/utility.py",
+      "original_sha256": "739b015fd150def375a89372699cd594d7571612c5f75f2c734624d6cd7533d5"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/provider/vllm.py",
+      "original_sha256": "41327cc16b8e7f8dca032273455e6cd723e15793b8315ee1638989804c0f64a7"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/sanitize.py",
+      "original_sha256": "0269b69cb27199bfd56d7a00aedc17df5c72f7e60f9d60281a958d9d3dbc50f0"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/syncheck.py",
+      "original_sha256": "3f9309720878e5bbed17ba5c75f8634cd28b0f7ddda69fb515b083fd5a64610e"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/evalplus/utils.py",
+      "original_sha256": "f1aec26a9eccdd11999522667e13c24cb1c6cb1dcf8332840cb8c750137eba13"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/evalplus/LICENSE",
+      "original_sha256": "fcc1f77fe5443b21bfc4dfcc3d66f7654f599b91582df771850e5e876986a103"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/benchmarks/__init__.py",
+      "original_sha256": "0837c4a42b027fe479d12165affe91214b6b180c90245129d0ac0822c74dbfea"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/benchmarks/code_execution.py",
+      "original_sha256": "b891e798b34b40c32fcfbaedf683c714937f5e10014864e5fd7f3b9c9f6b077f"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/benchmarks/code_generation.py",
+      "original_sha256": "0bc93f5a650b55d6a1b54d3db852d80ae64891ece4ff085b2e6b469eb89f8846"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/benchmarks/test_output_prediction.py",
+      "original_sha256": "2493f00ae1841d0997f5a35632c3d447a189c68641d636bdaa4e91d16bd30d05"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/evaluation/__init__.py",
+      "original_sha256": "828043d1f71e4120ac51be23f90001fd850bf6ef186a420979d76828ec909057"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/evaluation/compute_code_execution_metrics.py",
+      "original_sha256": "e63b6d29f12cc5206fd146b616312f305b8903b6459014d7bc6d51dfd6335980"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/evaluation/compute_code_generation_metrics.py",
+      "original_sha256": "073f388cc78bf0eb0ad35eaeb8bb509c0a3664963e5305d2be13d6b6eb6f3d21"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/evaluation/compute_scores.py",
+      "original_sha256": "b6272b78588f0cafc8abe3529a8aa7a6e9eed282eef5ea20da4e4187a4918531"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/evaluation/compute_test_output_prediction_metrics.py",
+      "original_sha256": "ec415d3207d8fbc04e8280ef091437d3a22e895b362e5557929f003e543a4653"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/evaluation/old_results_check.py",
+      "original_sha256": "ce0e22ab130888d8d286e499a7b4dbf3df453afd8b8df85183bd3a4ef455abb0"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/evaluation/pass_k_utils.py",
+      "original_sha256": "6af3ee55d40f96fa06fa511bd5e43d94b19604750e82454b4b3c1f45c5199010"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/evaluation/testing_util.py",
+      "original_sha256": "b7cb6a8a69807bb868150a61742e25d7bb5328bbe01d514471b6ec43c9fa9ed2"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/evaluation/utils_execute.py",
+      "original_sha256": "fb86e4c0834ccedd3f057006410909aeb79d9970db54838a9bed79d7039624fa"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/lm_styles.py",
+      "original_sha256": "57d645b09852d2030d389cf9a14ea818396b7b0510b3e2f3f22e3d3e6792b783"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/prompts/__init__.py",
+      "original_sha256": "a43744d5d0cf8da78b7a3fab35e33e0967f03125bd607be2f24a09e3e5c1ff00"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/prompts/code_execution.py",
+      "original_sha256": "5e4a1095ce393c3e298f25bcd2f2b6caa6cd5e2bf3e9b6dda91d689669ce830e"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/prompts/code_generation.py",
+      "original_sha256": "7f360dc01016c277e10c70959f46efe27b37c1d2c4ef72b077f93f348b3fd826"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/prompts/self_repair.py",
+      "original_sha256": "4a677c7f54469a3ea920c95c6fe00aeb639693a25d8d79dc5864a9b043424cb0"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/prompts/test_output_prediction.py",
+      "original_sha256": "3b0d2274a50f1f7bbd186c2945b0d4a8571bcf48469462b166fcfdce1273888e"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/runner/base_runner.py",
+      "original_sha256": "5599a53f6064b6f5119492ef008da0aed7e3086fa01ecc713a99d01aae345f30"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/runner/claude3_runner.py",
+      "original_sha256": "309b335298ee0e17eb1c7b9d1450739d0f40b1ab9d6da08943cad28dfaec9a18"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/runner/claude_runner.py",
+      "original_sha256": "ef5c275b3f38ea052d78c07a137774f7250b0dfc5b587ab5f6fd031863f47241"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/runner/cohere_runner.py",
+      "original_sha256": "6a1f32031c20eba62b8d2219ae00846600b43b790c7899fbfb72553998d7b02a"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/runner/custom_evaluator.py",
+      "original_sha256": "f486a539f8ee67712022e8f1cc84623e5f674af09eee7ecfcf68b15ae5f7b829"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/runner/deepseek_runner.py",
+      "original_sha256": "676c7a99fea094f9efb557bb50a8b12e57c2c69792078b4ce77ae1c47feb7090"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/runner/fireworks_runner.py",
+      "original_sha256": "a1f1a313a022b2a501a1a75d7c1cd1314fe459b5a8bed0455126680d9bf0598f"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/runner/gemini_runner.py",
+      "original_sha256": "10ff332b59029d4007dde7bd1ff1b6e90419da32abb98a4e99f4871ff3496ddb"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/runner/grok_runner.py",
+      "original_sha256": "9b5a440f1c67f70c2830e7285ca43b8aa30e1cce23b0b2bb5ac97585adf5052e"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/runner/main.py",
+      "original_sha256": "2d523fcea3a9f9a665a5602934859d67a0912de69571ab1b2d8097b44e7bc690"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/runner/mistral_runner.py",
+      "original_sha256": "c641c785c257d06df8c5301f6f81324d9739e1299e10763e08f9e9e9e6f0ccff"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/runner/oai_runner.py",
+      "original_sha256": "c7dc0b0dbd3ebf3c5bd20d0f79bc94d22b7335067a815bb00b40f20dcbafba34"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/runner/parser.py",
+      "original_sha256": "e9641729a6030164e712b9de465dea03dae95c3fdf036aac87abbbfab9fd7f33"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/runner/runner_utils.py",
+      "original_sha256": "c1ef006ebbb69c17f86bdacdab242c4b2659b7d2a1b5263b798272371c6c2fa6"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/runner/scenario_router.py",
+      "original_sha256": "b3f05927fa58d83847b2ffaac34b9f722af5b47e8b930ba15830507dc76a6649"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/runner/together_runner.py",
+      "original_sha256": "04026d4030a3d2d8461ada30676e4e89779d182b76f520d28aa432bb3fb0f3c7"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/runner/vllm_runner.py",
+      "original_sha256": "6bd2147e707023bd516176f4b80862d99b3d76d69ea0154011e4928f0b191d49"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/utils/extraction_utils.py",
+      "original_sha256": "1267d1724c6d4ea6d237b907dd6b53dfc6f1787a04b1616b85c3bc8377446879"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/utils/multiprocess.py",
+      "original_sha256": "13ad73a5b547acb41fc47192d34e836fc83e45abec6dde66b7744142638026b8"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/utils/path_utils.py",
+      "original_sha256": "48206191fef7c52e8e3d6343863642a89d265488b2e3475efce7e597f5ab08ca"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/lcb_runner/utils/scenarios.py",
+      "original_sha256": "3ff5d147fa6f56fde85e881a5ca359f502f983e8023f9a42cf87ff5043e263fc"
+    },
+    {
+      "path": "evaluation/scorers/pinned14/vendor/test-code/vendor/livecodebench/LICENSE",
+      "original_sha256": "104099948b78ebc36f2e951b3a7973b956adfa7d39aaec0d1512f97a2686d15d"
+    },
+    {
+      "path": "evaluation/scorers/bigcodebench/bigcodebench/__init__.py",
+      "original_sha256": "da556cf4bc44f5922a7b610aaa9e875111f4bb670a7ce8d2755b45fad532c9e0"
+    },
+    {
+      "path": "evaluation/scorers/bigcodebench/bigcodebench/data/__init__.py",
+      "original_sha256": "9359915bef845f7e2b1569f030a3f4acfe890e9da3744a38c1ea3cfec5e15a96"
+    },
+    {
+      "path": "evaluation/scorers/bigcodebench/bigcodebench/data/bigcodebench.py",
+      "original_sha256": "cac3e3a8425a1fc56816caf6133c193866aadd729c0bb735d8a00a387178007a"
+    },
+    {
+      "path": "evaluation/scorers/bigcodebench/bigcodebench/data/utils.py",
+      "original_sha256": "1d7d43e4dbfbbb8ca0dde4da73bfe3660c823e0ecad26d9d6707cc475bb2cb4f"
+    },
+    {
+      "path": "evaluation/scorers/bigcodebench/bigcodebench/eval/__init__.py",
+      "original_sha256": "d5fd553559ac1b76659ebc32ae30e3e779449ecd31c5201f2301319ceeee01fe"
+    },
+    {
+      "path": "evaluation/scorers/bigcodebench/bigcodebench/eval/_special_oracle.py",
+      "original_sha256": "0cf930163987d30f455547aec6cbc500a154bc58a2eb109aa247ef4e0962448b"
+    },
+    {
+      "path": "evaluation/scorers/bigcodebench/bigcodebench/eval/utils.py",
+      "original_sha256": "9061f74fe937c4eb7a1b2bc423f7acab547ae01804d5e25933e2aa8a3cc2d685"
+    },
+    {
+      "path": "evaluation/scorers/bigcodebench/bigcodebench/evaluate.py",
+      "original_sha256": "6f737ddbec85c8e24d995898bab528b8c28fc5090a488652c8af557ad85f0667"
+    },
+    {
+      "path": "evaluation/scorers/bigcodebench/bigcodebench/gen/__init__.py",
+      "original_sha256": "7952440f3bd47b4f97f628b3d529dab58e57c42766f9e0594b4d4ccf55882dbb"
+    },
+    {
+      "path": "evaluation/scorers/bigcodebench/bigcodebench/gen/util/__init__.py",
+      "original_sha256": "759e129e4115ec596c9cd8784f7d37ca909b2cefc02afccf4eb89837d59cf249"
+    },
+    {
+      "path": "evaluation/scorers/bigcodebench/bigcodebench/gen/util/anthropic_request.py",
+      "original_sha256": "bf1dc48d128fd86528367bef8adb276e3e65dfd6dcc16024c8bc507eb985eae1"
+    },
+    {
+      "path": "evaluation/scorers/bigcodebench/bigcodebench/gen/util/google_request.py",
+      "original_sha256": "050272723b66c6ba1c6fe04cdf7b8db3acadf644ab240953b7c9a9cbd5bfad0b"
+    },
+    {
+      "path": "evaluation/scorers/bigcodebench/bigcodebench/gen/util/hf_inference_request.py",
+      "original_sha256": "0d65645819069cfd7ac5e0dd1e36da08a3b65ece839d63a5c06f7f5f7f9dbe52"
+    },
+    {
+      "path": "evaluation/scorers/bigcodebench/bigcodebench/gen/util/mistral_request.py",
+      "original_sha256": "20afed09257393d6536ed16f3084c7011db2b4e8c35898558108dfa953b81f88"
+    },
+    {
+      "path": "evaluation/scorers/bigcodebench/bigcodebench/gen/util/openai_request.py",
+      "original_sha256": "f7d147d3ee01dc77db9c45f1b567b76614331d8ddf9b46db0cfc39081648457e"
+    },
+    {
+      "path": "evaluation/scorers/bigcodebench/bigcodebench/generate.py",
+      "original_sha256": "12325ca6da7a6469bc76084b0030762065036b66ffa69c2e6211c03bd6075203"
+    },
+    {
+      "path": "evaluation/scorers/bigcodebench/bigcodebench/inspect.py",
+      "original_sha256": "8d958c3ee75912ad13a3180731b2bfe0cc0d481e5c0f5c8fc829edd671145243"
+    },
+    {
+      "path": "evaluation/scorers/bigcodebench/bigcodebench/provider/__init__.py",
+      "original_sha256": "eb645f300b7666fc2bd128a85e46e8fd5d40f9fb77e3a4f80fd4e6decbd7cdbd"
+    },
+    {
+      "path": "evaluation/scorers/bigcodebench/bigcodebench/provider/anthropic.py",
+      "original_sha256": "0e6c47b728562a731d1300ac49d9a9e78e590c2cd1a67113114f4ab725aff782"
+    },
+    {
+      "path": "evaluation/scorers/bigcodebench/bigcodebench/provider/base.py",
+      "original_sha256": "dfd2ab4dc584592d48c093557dfa5f49c2c2a6821f3f36a091f5e43043fa3f85"
+    },
+    {
+      "path": "evaluation/scorers/bigcodebench/bigcodebench/provider/google.py",
+      "original_sha256": "d357d524e54b86d53ba27065912f004fcdc38f38bc291d186a6082fbbeb2fdb2"
+    },
+    {
+      "path": "evaluation/scorers/bigcodebench/bigcodebench/provider/hf.py",
+      "original_sha256": "5ae95dd1409976d48b0439122ba6f0cea720c4431c5ccb83d2414aed3a06f7b8"
+    },
+    {
+      "path": "evaluation/scorers/bigcodebench/bigcodebench/provider/hf_inference.py",
+      "original_sha256": "92629b32ff096fcd66a86096b963f118c89b055e4193eeb3f0d1267bbd7050af"
+    },
+    {
+      "path": "evaluation/scorers/bigcodebench/bigcodebench/provider/mistral.py",
+      "original_sha256": "a108bdea8d5baec457208d6475e5df6228550d9b4a6c19f2fa4de5bd7b336fa6"
+    },
+    {
+      "path": "evaluation/scorers/bigcodebench/bigcodebench/provider/openai.py",
+      "original_sha256": "c2a128aef5b3bc4b3fec25f299603b82689cf3697e29eb669c6fbe1a33bd5559"
+    },
+    {
+      "path": "evaluation/scorers/bigcodebench/bigcodebench/provider/utility.py",
+      "original_sha256": "a58690bedcdcb0bac9062bcef94c0ecbe1ef204e7fb7bebf6a6423e6a5900eaf"
+    },
+    {
+      "path": "evaluation/scorers/bigcodebench/bigcodebench/provider/vllm.py",
+      "original_sha256": "0805bc48341a4d3518647b71aa6b1741646d6754f9c068d9b884ffce02e5503a"
+    },
+    {
+      "path": "evaluation/scorers/bigcodebench/bigcodebench/sanitize.py",
+      "original_sha256": "c3b34cd425b0eb62afaf84f4268af787d317ce552685dd6d9b396442c91f47e4"
+    },
+    {
+      "path": "evaluation/scorers/bigcodebench/bigcodebench/syncheck.py",
+      "original_sha256": "7545ffb2eedf0035067898170c09f01637cd203e6204b88e34bea0ecc7b39895"
+    },
+    {
+      "path": "evaluation/scorers/bigcodebench/LICENSE",
+      "original_sha256": "a858540b8dfd0c74db6953edaae85bde0b671643a7e2fb04a065f4dfd25fc28c"
+    },
+    {
+      "path": "evaluation/scorers/local_bigcode/docker_sandbox.py",
+      "original_sha256": "656ce50fa3a8147c0fa89d2c08f2d8fc5df793146804e3e7111577f8b93d5a31"
+    },
+    {
+      "path": "evaluation/scorers/local_bigcode/sandbox_bigcode.sh",
+      "original_sha256": "07accd8e1bac3fe64fe688f4762f9bb78d62fd0e26718450a36df3c4d2ad43d7"
+    },
+    {
+      "path": "evaluation/scorers/local_bigcode/score_local.py",
+      "original_sha256": "7b67d01689581c1a00eb447901143014ffdbe1b116a7a85ebee135421598493c"
+    },
+    {
+      "path": "evaluation/repairs/scoring_v4/rescore.py",
+      "original_sha256": "ee9a4754d3760492860720973f8eeaef53e987c7a3b912e590e25705989c1cfd"
+    },
+    {
+      "path": "evaluation/repairs/scoring_v4/score_evalplus.py",
+      "original_sha256": "d373f9d9132d498a87b20991b005ad2ebed1762da7e7b97f5c4e4625b9d5b086"
+    },
+    {
+      "path": "evaluation/repairs/scoring_v4/score_local.py",
+      "original_sha256": "80224b5f5b860f5b06f81040ebc1f3ece16525ecb7fe461331264a280aec8e70"
+    },
+    {
+      "path": "evaluation/repairs/scoring_v4/offline_resources.py",
+      "original_sha256": "1d0a17cf3920008647a7cbce7a67432a0f5c952ef71ca3535db2ef1897dbccbf"
+    },
+    {
+      "path": "evaluation/repairs/scoring_v4/sandbox.sh",
+      "original_sha256": "781c8ada62d433dbe16ce84482369c05158a892e7e3e54e67985f8aef88740ab"
+    },
+    {
+      "path": "evaluation/repairs/scoring_v4/requirements-bigcode-py310.txt",
+      "original_sha256": "e5a0874fbf7bff789a8aa7f295e1f1653d49610fc93aa56244ab74e0092af641"
+    },
+    {
+      "path": "evaluation/repairs/scoring_v4/HUMANEVAL_REFERENCE_CHECK.md",
+      "original_sha256": "b7a736aad1faf079c73464f28a1facd775f34b12d02ca34ba73d067084b1d127"
+    },
+    {
+      "path": "evaluation/repairs/scoring_v4/assets/manifest.json",
+      "original_sha256": "ea5911ec10427f3c7f34d213ea635a0586e1f0ee7f37e1b863fcec597a26415b"
+    }
+  ]
+}

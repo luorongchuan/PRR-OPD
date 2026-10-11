@@ -1,0 +1,16 @@
+{
+  "revision": "human32-known-reference-outcomes-v1",
+  "dataset": "HumanEvalPlus",
+  "official_data_sha256": "272720b90ac375502c8ed23cd791c2a93dfb22a911641a494da74a426c09f101",
+  "task_id": "HumanEval/32",
+  "canonical_code_sha256": "a3b65be591e39a6b3ac785c5099f65c83538568904092d58eb1830711633341e",
+  "plus_inputs_sha256": "2b91aaa340e11250d4440fe55ceb08a33927e0779b310c64e2ed87cb490d69f2",
+  "base_input_count": 100,
+  "plus_input_count": 788,
+  "atol": 0.0001,
+  "base_status": "pass",
+  "plus_status": "fail",
+  "plus_failed_input_indices": [119, 177, 185, 399, 616, 650, 694],
+  "explanation": "The frozen official Newton reference has nonconvergent or numerically inaccurate outputs on these inputs. This is a negative reference control, not passing credit for model predictions.",
+  "diagnostic_evidence": "model evaluation/checks/humaneval_controls_20261009_full32/controls/canonical_failure.json"
+}

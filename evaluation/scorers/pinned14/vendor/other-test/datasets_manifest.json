@@ -1,0 +1,71 @@
+{
+  "dataset_order": [
+    "AIME24",
+    "AIME25",
+    "HMMT25",
+    "Minerva",
+    "Olympiad-Bench",
+    "GSM8K"
+  ],
+  "datasets": {
+    "AIME24": {
+      "path": "data/evaluation/AIME24/test.parquet",
+      "rows": 30,
+      "schema": "prompt: list<element: struct<content: string, role: string>>\n  child 0, element: struct<content: string, role: string>\n      child 0, content: string\n      child 1, role: string\nsource: string\nid: string\ndata_source: string\nability: string\nreward_model: struct<ground_truth: string, style: string>\n  child 0, ground_truth: string\n  child 1, style: string\nextra_info: struct<index: string, split: string>\n  child 0, index: string\n  child 1, split: string\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 886",
+      "sha256": "dc3ae15e0236828eb95033a68aab60e19da7ea1afdaad80e26924e5f82d3d96f",
+      "unique_ids": 30
+    },
+    "AIME25": {
+      "path": "data/evaluation/AIME25/test.parquet",
+      "rows": 30,
+      "schema": "prompt: list<element: struct<content: string, role: string>>\n  child 0, element: struct<content: string, role: string>\n      child 0, content: string\n      child 1, role: string\ndata_source: string\nability: string\nreward_model: struct<ground_truth: string, style: string>\n  child 0, ground_truth: string\n  child 1, style: string\nextra_info: struct<index: string, split: string>\n  child 0, index: string\n  child 1, split: string\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 670",
+      "sha256": "14ee9a0e8d79cba76c62247bc5ebee1647e023eccf60e31994e279113777dad2",
+      "unique_ids": 30
+    },
+    "GSM8K": {
+      "path": "data/evaluation/GSM8K/test.parquet",
+      "rows": 1319,
+      "schema": "prompt: list<element: struct<content: string, role: string>>\n  child 0, element: struct<content: string, role: string>\n      child 0, content: string\n      child 1, role: string\ndata_source: large_string\nability: large_string\nreward_model: struct<ground_truth: string, style: string>\n  child 0, ground_truth: string\n  child 1, style: string\nextra_info: struct<index: string, split: string>\n  child 0, index: string\n  child 1, split: string\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 680",
+      "sha256": "25429df02b6a43bd020bbb14ee96b07e6ea6b9f286195dd87d7e44523c098004",
+      "unique_ids": 1319
+    },
+    "HMMT25": {
+      "path": "data/evaluation/HMMT25/test.parquet",
+      "rows": 30,
+      "schema": "prompt: list<element: struct<content: string, role: string>>\n  child 0, element: struct<content: string, role: string>\n      child 0, content: string\n      child 1, role: string\ndata_source: large_string\nability: large_string\nreward_model: struct<ground_truth: string, style: string>\n  child 0, ground_truth: string\n  child 1, style: string\nextra_info: struct<index: string, split: string>\n  child 0, index: string\n  child 1, split: string\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 680",
+      "sha256": "db48e9eb9c1e1f133b15ad1ee3fc07d3e06b20c431e175a79f0d5d01459307de",
+      "unique_ids": 30
+    },
+    "Minerva": {
+      "path": "data/evaluation/Minerva/test.parquet",
+      "rows": 272,
+      "schema": "prompt: list<element: struct<content: string, role: string>>\n  child 0, element: struct<content: string, role: string>\n      child 0, content: string\n      child 1, role: string\ndata_source: string\nability: string\nreward_model: struct<ground_truth: string, style: string>\n  child 0, ground_truth: string\n  child 1, style: string\nextra_info: struct<index: string, split: string>\n  child 0, index: string\n  child 1, split: string\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 670",
+      "sha256": "6a83af0cd9e476ee8832200a57158a23978481daa580584645abc52cf3d4b2ed",
+      "unique_ids": 272
+    },
+    "Olympiad-Bench": {
+      "path": "data/evaluation/Olympiad-Bench/test.parquet",
+      "rows": 675,
+      "schema": "prompt: list<element: struct<content: string, role: string>>\n  child 0, element: struct<content: string, role: string>\n      child 0, content: string\n      child 1, role: string\nsource: string\nid: string\ndata_source: string\nability: string\nreward_model: struct<ground_truth: string, style: string>\n  child 0, ground_truth: string\n  child 1, style: string\nextra_info: struct<index: string, split: string>\n  child 0, index: string\n  child 1, split: string\n-- schema metadata --\npandas: '{\"index_columns\": [], \"column_indexes\": [], \"columns\": [{\"name\":' + 886",
+      "sha256": "803e3b4d196bf495b216d7b52ff26c1d607fc1c906618fd833778f798327a39f",
+      "unique_ids": 675
+    }
+  },
+  "instruction": "Please reason step by step, and put your final answer within \\boxed{}.",
+  "raw_sources": {
+    "GSM8K": {
+      "path": "download separately; see the pinned URL",
+      "revision": "e53f048856ff4f594e959d75785d2c2d37b678ee",
+      "sha256": "ee7b8da9e381df27b9e3f7758a159ab2bdaa4dbaa910546cbbc47e0cb44e4f59",
+      "url": "https://huggingface.co/datasets/openai/gsm8k/resolve/e53f048856ff4f594e959d75785d2c2d37b678ee/main/test-00000-of-00001.parquet"
+    },
+    "HMMT25": {
+      "path": "download separately; see the pinned URL",
+      "revision": "6fdc4277120810ff75aa22d2d5489b91f7a262a1",
+      "sha256": "ccca64d248b89dc0765e40b893fe4ebeab242226a4336027d95d256886a3d5f2",
+      "url": "https://huggingface.co/datasets/MathArena/hmmt_feb_2025/resolve/6fdc4277120810ff75aa22d2d5489b91f7a262a1/data/train-00000-of-00001.parquet"
+    }
+  },
+  "schema_version": 1,
+  "total_rows_per_model": 2356
+}

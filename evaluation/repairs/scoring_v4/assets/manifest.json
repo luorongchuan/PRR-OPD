@@ -1,0 +1,20 @@
+{
+  "resources": {
+    "boston.data": {
+      "source": "https://lib.stat.cmu.edu/datasets/boston",
+      "aliases": ["http://lib.stat.cmu.edu/datasets/boston", "https://lib.stat.cmu.edu/datasets/boston"],
+      "sha256": "1df1f5ccfcd1cb9e8f9eaa2c871bb3355eafdde755267bcd593f817b21b92a7b"
+    },
+    "wikibooks.html": {
+      "source": "https://en.wikibooks.org/wiki/Main_Page",
+      "aliases": ["https://en.wikibooks.org/wiki/Main_Page"],
+      "sha256": "34551b6cfc3b678ceee2201972733ef4d8f53c0a9124f72c53afc8b26d1e0c40"
+    },
+    "benchmark.zip": {
+      "source": "https://drive.google.com/uc?export=download&id=1MRyf-bpPYb7hT3Oj4ZK35O-fzM2_HZ7A",
+      "aliases": ["https://drive.google.com/uc?export=download&id=1MRyf-bpPYb7hT3Oj4ZK35O-fzM2_HZ7A"],
+      "sha256": "c73b145ed1f8ba7bd5a215b9fab8fc0bae496882673a741ed10a24ba5f427f7d"
+    }
+  },
+  "policy": "Real public task resources downloaded on 2026-10-09; identical offline bytes for canonical controls and every model. No generated code or model weights uploaded."
+}

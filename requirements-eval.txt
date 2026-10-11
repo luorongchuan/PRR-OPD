@@ -1,0 +1,21 @@
+# Separate Python 3.12 evaluation environment used in the experiments.
+vllm==0.11.0
+torch==2.8.0
+transformers==4.56.1
+datasets==5.0.0
+pyarrow==24.0.0
+numpy==1.26.4
+math-verify==0.9.0
+sympy==1.14.0
+antlr4-python3-runtime==4.9.3
+psutil==7.2.2
+pandas
+requests
+fire
+appdirs
+tempdir
+multipledispatch
+termcolor
+tqdm
+rich
+pebble

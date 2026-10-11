@@ -1,0 +1,48 @@
+import torch
+import torch.nn.functional as F
+
+from kdflow.algorithms import register_algorithm
+from kdflow.loss.chunked_loss import chunked_loss
+from kdflow.loss.cross_entropy import compute_cross_entropy
+
+
+@register_algorithm("sft")
+class SFT:
+    def __init__(self, strategy, student_model, **kwargs):
+        self.strategy = strategy
+        self.args = strategy.args
+        self.student = student_model
+    
+    def training_step(self, micro_batch):
+        student_input_ids = micro_batch["stu_input_ids"]
+        student_attn_mask = micro_batch["stu_attn_mask"]
+        student_loss_mask = micro_batch["stu_loss_mask"].bool()
+        avg_token_num = micro_batch["avg_micro_batch_token_num"]
+
+        mm_kwargs = micro_batch.get("stu_multi_modal_inputs") or {}
+
+        output = self.student(
+            student_input_ids,
+            attention_mask=student_attn_mask,
+            allgather_logits=True,
+            ring_attn_group=self.strategy.ring_attn_group,
+            **mm_kwargs,
+        )
+        student_hiddens = output["hidden_states"][-1][student_loss_mask]
+        del output
+
+        student_label_ids = student_input_ids.roll(shifts=-1, dims=1)[student_loss_mask]
+
+        # Non-chunked case is a special case of chunked loss (i.e., chunk_size = seq_len)
+        chunk_size = self.args.train.chunked_loss_size or student_hiddens.shape[0]
+        ce_loss = chunked_loss(
+            student_hiddens, self.student.model.lm_head, compute_cross_entropy,
+            label=student_label_ids, chunk_size=chunk_size, reduction="sum"
+        ) / avg_token_num
+
+        loss_info = {}
+        loss = ce_loss
+        loss_info["train/loss"] = loss
+        loss_info["train/ce_loss"] = ce_loss
+
+        return loss_info

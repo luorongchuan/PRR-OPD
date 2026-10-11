@@ -1,0 +1,16 @@
+{
+  "purpose": "Frozen official EvalPlus releases for reproducible prompt generation and scoring",
+  "files": {
+    "HumanEvalPlus-v0.1.10.jsonl.gz": {
+      "rows": 164,
+      "sha256": "272720b90ac375502c8ed23cd791c2a93dfb22a911641a494da74a426c09f101",
+      "source_url": "https://github.com/evalplus/humanevalplus_release/releases/download/v0.1.10/HumanEvalPlus.jsonl.gz"
+    },
+    "MbppPlus-v0.2.0.jsonl.gz": {
+      "rows": 378,
+      "sha256": "af43697e8791c4c149bdfd6b489d8b5412507551ac20e28a439f650b8225db63",
+      "source_url": "https://github.com/evalplus/mbppplus_release/releases/download/v0.2.0/MbppPlus.jsonl.gz"
+    }
+  },
+  "evalplus_vendor_commit": "26d6d00bb1fd0fa37f39c99d5290da67891d1c5e"
+}
