@@ -47,13 +47,11 @@ Generated code executes locally in isolated Linux namespaces. The host needs
 `unshare`, `mount`, `chroot`, `ip`, and enabled user namespaces; do not disable
 the sandbox to work around environment failures. Scoring uploads nothing.
 
-## Outputs and Resume
+## Outputs
 
 Each session contains `results.csv`, `RESULTS.md`, `status.json`, and
 per-model protocols, generated batches, and per-dataset score summaries.
 Pending or blocked scores are missing, not zero. GPU generation completion
 does not imply scoring completion.
 
-Repeat the same command and session to resume validated outputs. Changed
-models, data, code, or decoding settings require a new session. Add
-`--resume-evaluations` only after resolving a recorded resource hold.
+Changed models, data, code, or decoding settings require a new session.

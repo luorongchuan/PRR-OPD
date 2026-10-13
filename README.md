@@ -45,9 +45,8 @@ For host-side container launch, use `scripts/train_in_container.sh`.
 
 The size-specific recipes in `configs/training/` use a fixed prompt order,
 one epoch (551 updates), batch size 32, a 4,096-token response budget, BF16,
-and full-vocabulary reverse KL. Add `--dry-run` to inspect a command,
-or `--resume CHECKPOINT` to restore a complete checkpoint in the same output
-directory. Final models are saved under
+and full-vocabulary reverse KL. Add `--dry-run` to inspect a command.
+Final models are saved under
 `epoch_1_end_global_step_551/model/`.
 
 Optional training switches are `--candidate adamw`, `--shuffle-weights`,
@@ -83,8 +82,7 @@ the same model, GPU, and session options. Evaluation uses 16 responses per
 question, seed 42, temperature 0.6, top-p 0.95, top-k 20, BF16, and a 2,048-token
 response budget, with thinking disabled. Results are saved in the session's
 `results.csv` and `RESULTS.md`.
-[Evaluation notes](docs/EVALUATION.md) cover local scoring, BigCodeBench setup,
-and resuming interrupted sessions.
+[Evaluation notes](docs/EVALUATION.md) cover local scoring and BigCodeBench setup.
 
 ## Tests and Licenses
 
